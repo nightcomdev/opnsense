@@ -12,7 +12,7 @@ All info in this section is tuned under this hardware:
 Soon more data....
 
 
-## More info
-For more informations go to repository of BillyCurtis
+## More info about i226-V firmware upgrade
+For more informations about upgrading i226-V firmware go to repository of BillyCurtis
 
 https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware

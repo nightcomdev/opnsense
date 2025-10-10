@@ -1,5 +1,7 @@
-# opnsense
-Configuration files, tips and tricks for Opnsense
+# Optimized Opnsense
+This repository contains tips & tricks and optimization of Opnsense
+- optimization of tunables
+- optimization of Unbound
 
 
 ## Hardware

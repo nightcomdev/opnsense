@@ -45,3 +45,18 @@ This configuration is tuned for Opnsense router with
 | net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
+
+## Hardware & Driver Settings
+
+| Tunable                   | Value | Default | Description                                 |
+| ------------------------- |:-----:|:-------:|:-------------------------------------------:|
+| dev.igc.0.fc              | 0     | 1       | Disable flow control on igc0                |
+| dev.igc.1.fc              | 0     | 1       | Disable flow control on igc1                |
+| dev.igc.2.fc              | 0     | 1       | Disable flow control on igc2                |
+| dev.igc.3.fc              | 0     | 1       | Disable flow control on igc3                |
+| dev.igc.0.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
+| dev.igc.1.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
+| dev.igc.2.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
+| dev.igc.3.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
+| hw.igc.max_interrupt_rate | 8000  | 10000   | Max interrupts per second (8k)              |
+| hw.igc.enable_aim         | 2     | 1       | Adaptive interrupt moderation (low latency) |

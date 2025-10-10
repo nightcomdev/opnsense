@@ -1,5 +1,7 @@
-## TUNABLES
-Info related to tunables
+# TUNABLES optimization for Opnsense
+Here you can find tunables that I optimazed for my network. Default values are values used by Opnsense. All informations and descritopns are from internet like blogs, forums, documentation of Opnsense and FreeBSD.
+
+Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other tweaks
 
 # OPNsense System Tunables Configuration
 

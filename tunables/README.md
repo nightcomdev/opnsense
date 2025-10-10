@@ -1,13 +1,14 @@
 # TUNABLES optimization for Opnsense
 Here you can find tunables that I optimazed for my network. Default values are values used by Opnsense. All informations and descritopns are from internet like blogs, forums, documentation of Opnsense and FreeBSD.
 
-Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other tweaks
+Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other tweaks. Network card Intel i226-V was upgraded to firmware v2.32
 
 # OPNsense System Tunables Configuration
 
 This configuration is tuned for Opnsense router with 
 - CPU N5105
 - 16GB RAM
+- i226-V
 - ZFS file system
 - internet 1Gbps fiber Upload/Download
 

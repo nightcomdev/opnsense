@@ -33,3 +33,15 @@ This configuration is tuned for Opnsense router with
 | net.inet.tcp.recvspace    | 65536    | 65536   | Initial receive socket buffer size |
 | net.inet.udp.recvspace    | 65536    | 42080   | Max incoming UDP datagram space    |
 | net.inet.udp.sendspace    | 65536    | 9216    | Max outgoing UDP datagram space    |
+
+## TCP Optimization
+
+| Tunable                       | Value | Default | Description                            |
+| ----------------------------- |:-----:|:-------:|:--------------------------------------:|
+| net.inet.tcp.tso              | 0     | 1       | Disable TCP Segmentation Offload       |
+| net.inet.tcp.soreceive_stream | 1     | 0       | Use soreceive_stream for TCP           |
+| net.inet.tcp.rfc1323          | 1     | 1       | Enable high performance TCP extensions |
+| net.inet.tcp.sendbuf_auto     | 1     | 1       | Automatic send buffer sizing           |
+| net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
+| net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
+| net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |

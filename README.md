@@ -10,6 +10,7 @@ All info in this section is tuned under this hardware:
 - 4x Intel i226-V
 - 16GB RAM
 - 500GB M.2 SSD
+- Internet Odido fiber Netherlands 1Gbps Upload/Download
 
 Soon more data....
 

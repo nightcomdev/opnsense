@@ -3,6 +3,12 @@ Info related to tunables
 
 # OPNsense System Tunables Configuration
 
+This configuration is tuned for Opnsense router with 
+- CPU N5105
+- 16GB RAM
+- ZFS file system
+- internet 1Gbps fiber Upload/Download
+
 ## Network Security & Hardening
 
 | Tunable                      | Value | Default | Description                            |

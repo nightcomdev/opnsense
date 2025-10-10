@@ -5,8 +5,10 @@ Info related to tunables
 
 ## Network Security & Hardening
 
-| Tunable                  | Value    | Default  | Description                    |
-| ------------------------ |:--------:| --------:| ------------------------------ |
-| net.inet.ip.sourceroute	 | (empty)	 | Disabled | Prevent source routing attacks |
-| neat and cool!           |          |          |                                |
-| is WIP \| soon.          |          |          |                                |
+| Tunable                      | Value | Default | Description                            |
+| ---------------------------- |:-----:|:-------:|:--------------------------------------:|
+| net.inet.tcp.delayed_ack	    | 0     | 1       | Prevent source routing attacks         |
+| net.inet.icmp.drop_redirect	 | 1     | 0       | Drop all inbound ICMP redirect packets |
+| hw.ibrs_disable	             | 1     | 1       | Disable Spectre V2 mitigation          |
+
+## Network Performance & Buffers

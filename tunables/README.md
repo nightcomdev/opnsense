@@ -60,3 +60,10 @@ This configuration is tuned for Opnsense router with
 | dev.igc.3.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | hw.igc.max_interrupt_rate | 8000  | 10000   | Max interrupts per second (8k)              |
 | hw.igc.enable_aim         | 2     | 1       | Adaptive interrupt moderation (low latency) |
+
+## System & Process Management
+
+| Tunable                   | Value | Default | Description                                 |
+| ------------------------- |:-----:|:-------:|:-------------------------------------------:|
+| kern.sched.preempt_thresh | 240   | 0       | Max priority for preemption                 |
+| kern.ipc.soacceptqueue    | 2048  | 128     | Max listen socket queue size                |

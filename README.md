@@ -2,6 +2,7 @@
 This repository contains tips & tricks and optimization of Opnsense. You can pick from links below what you want to optimize
 - [tunables](https://github.com/nightcomdev/opnsense/tree/main/tunables)
 - [Unbound](https://github.com/nightcomdev/opnsense/tree/main/Unbound)
+- [Intel i226-V Firmware upgrade](https://github.com/nightcomdev/opnsense/tree/main/i226-firmware-upgrade)
 
 
 ## Hardware

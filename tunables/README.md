@@ -11,6 +11,7 @@ This configuration is tuned for Opnsense router with
 - 4x i226-V
 - ZFS file system
 - internet 1Gbps fiber Upload/Download
+- LAN 2.5Gbps
 
 ## Network Security & Hardening
 

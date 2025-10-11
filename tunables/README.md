@@ -47,9 +47,14 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.recvspace    | 65536    | 65536   | Initial receive socket buffer size |
 | net.inet.udp.recvspace    | 65536    | 42080   | Max incoming UDP datagram space    |
 | net.inet.udp.sendspace    | 65536    | 9216    | Max outgoing UDP datagram space    |
+| net.inet.udp.maxdgram     | 57344 | 9216    | Max outgoing UDP datagram size       |
+| net.local.dgram.maxdgram  | 2048  | 2048    | Max outgoing local UDP datagram size |
+| net.inet.tcp.sendbuf_inc	 | 65536 | 8192    | Send buffer increment step size      |
+| net.inet.tcp.minmss       | 536   | 216     | Minimum TCP Maximum Segment Size     |
+| net.link.ifqmaxlen        | 1024  | 50      | Max send queue size                  |
 
 
-## TCP Optimization
+## TCP Optimization & Algorithms
 
 | Tunable                       | Value | Default | Description                            |
 | ----------------------------- |:-----:|:-------:|:--------------------------------------:|
@@ -60,6 +65,13 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
+| net.inet.tcp.cc.algorithm      | cubic | newreno | Congestion control algorithm         |
+| net.inet.tcp.cc.abe            | 1     | 0       | TCP Alternative Backoff with ECN     |
+| net.inet.tcp.rfc6675_pipe      | 1     | 0       | RFC6675 pipe calculation             |
+| net.inet.tcp.abc_l_var         | 44    | 2       | Max cwnd increment during slow-start |
+| net.inet.tcp.initcwnd_segments | 44    | 10      | Initial congestion window segments   |
+| net.inet.tcp.inflight.min      | 6144  | 6144    | Minimum in-flight data               |
+| net.inet.tcp.inflight.enable   | 1     | 0       | Enable in-flight tracking            |
 
 
 ## Hardware & Driver Settings

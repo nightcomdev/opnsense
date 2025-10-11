@@ -1,5 +1,7 @@
 # Optimizing OPNsense Performance
-This repository contains tips & tricks and optimization of Opnsense, Unbound and Intel i226-V. Here is a list of options that I already optimized. Be aware that it's optimized for hardware listed in section Hardware, adjust config to your needs
+This repository contains tips & tricks and optimization of Opnsense, Unbound and Intel i226-V. Be aware that it's optimized for hardware listed in section Hardware, adjust config to your needs
+
+## Main menu of repository 
 - [tunables](https://github.com/nightcomdev/opnsense/tree/main/tunables)
 - [Unbound](https://github.com/nightcomdev/opnsense/tree/main/Unbound)
 - [Intel i226-V Firmware upgrade](https://github.com/nightcomdev/opnsense/tree/main/i226-firmware-upgrade)

@@ -5,7 +5,7 @@ Read carefully and adjust to your needs. If you have stronger hardware you can r
 
 # OPNsense System Tunables Configuration
 
-This configuration is tuned for Opnsense router Hunsn RJ03. Hardware list:
+This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 - CPU N5105
 - 16GB RAM
 - 4x i226-V

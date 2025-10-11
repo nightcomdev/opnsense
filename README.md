@@ -1,4 +1,4 @@
-# Optimizing OPNsense
+# Optimizing OPNsense Performance
 This repository contains tips & tricks and optimization of Opnsense
 - optimization of tunables
 - optimization of Unbound

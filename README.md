@@ -1,6 +1,6 @@
 # Optimizing OPNsense Performance
 This repository contains tips & tricks and optimization of Opnsense. You can pick from links below what you want to optimize
-- [tunables](https://github.com/nightcomdev/opnsense/tunables)
+- [tunables](https://github.com/nightcomdev/opnsense/tree/main/tunables)
 - [Unbound](https://github.com/nightcomdev/opnsense/Unbound)
 
 

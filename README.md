@@ -16,9 +16,3 @@ All info in this section is tuned under this hardware:
 - Internet Odido fiber Netherlands 1Gbps Upload/Download
 
 Soon more data....
-
-
-## More info about i226-V firmware upgrade
-For more informations about upgrading i226-V firmware go to repository of BillyCurtis
-
-https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware

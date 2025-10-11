@@ -31,6 +31,7 @@ This configuration is tuned for Opnsense router with
 | net.inet.ip.accept_sourceroute | 0     | 0       | Prevent accepting source routed packets       |
 | net.inet.icmp.log_redirect     | 0     | 0       | Prevent redirect packet log flooding          |
 
+
 ## Network Performance & Buffers
 
 | Tunable                   | Value    | Default | Description                        |
@@ -45,6 +46,7 @@ This configuration is tuned for Opnsense router with
 | net.inet.udp.recvspace    | 65536    | 42080   | Max incoming UDP datagram space    |
 | net.inet.udp.sendspace    | 65536    | 9216    | Max outgoing UDP datagram space    |
 
+
 ## TCP Optimization
 
 | Tunable                       | Value | Default | Description                            |
@@ -56,6 +58,7 @@ This configuration is tuned for Opnsense router with
 | net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
+
 
 ## Hardware & Driver Settings
 
@@ -72,12 +75,14 @@ This configuration is tuned for Opnsense router with
 | hw.igc.max_interrupt_rate | 8000  | 10000   | Max interrupts per second (8k)              |
 | hw.igc.enable_aim         | 2     | 1       | Adaptive interrupt moderation (low latency) |
 
+
 ## System & Process Management
 
 | Tunable                   | Value | Default | Description                                 |
 | ------------------------- |:-----:|:-------:|:-------------------------------------------:|
 | kern.sched.preempt_thresh | 240   | 0       | Max priority for preemption                 |
 | kern.ipc.soacceptqueue    | 2048  | 128     | Max listen socket queue size                |
+
 
 ## Network Stack & RSS
 

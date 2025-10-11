@@ -3,7 +3,7 @@ This section will describe steps to upgrade firmware in your enthernet Intel i22
 
 ## Intel i226-V Firmware v2.32 upgrade pack
 
-Link to Firmware upgrade pack for i226-V with image v2.32
+Link to Firmware upgrade pack for i226-V with image v2.32 (1MB version)
 
 https://github.com/nightcomdev/opnsense/raw/refs/heads/main/i226-firmware-upgrade/i226.firmware.v2.32.zip
 

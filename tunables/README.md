@@ -14,22 +14,23 @@ This configuration is tuned for Opnsense router with
 
 ## Network Security & Hardening
 
-| Tunable                        | Value | OPNsense Default | Description                                   |
-| ------------------------------ |:-----:|:----------------:| --------------------------------------------- |
-| net.inet.tcp.drop_synfin       | 1     | 0                | Drop SYN-FIN packets (breaks RFC1379)         |
-| net.inet6.ip6.redirect         | 0     | 1                | Disable sending IPv6 redirects                |
-| net.inet.tcp.syncookies        | 1     | 1                | SYN cookies for SYN-ACK packets               |
-| net.inet.tcp.delayed_ack       | 0     | 1                | Disable delayed ACK piggybacking              |
-| net.inet.icmp.drop_redirect    | 1     | 0                | Drop all inbound ICMP redirect packets        |
-| security.bsd.see_other_gids    | 0     | 1                | Hide processes from other groups              |
-| security.bsd.see_other_uids    | 0     | 1                | Hide processes from other users               |
-| hw.ibrs_disable                | 1     | 0                | Disable Spectre V2 mitigation                 |
-| net.inet.ip.redirect           | 0     | 1                | Disable sending ICMP redirects                |
-| net.inet.tcp.icmp_may_rst      | 0     | 1                | Disable ICMP unreachable aborting connections |
-| net.inet.ip.check_interface    | 1     | 0                | Enable interface checking                     |
-| net.inet.ip.sourceroute        | 0     | 0                | Prevent source routing attacks                |
-| net.inet.ip.accept_sourceroute | 0     | 0                | Prevent accepting source routed packets       |
-| net.inet.icmp.log_redirect     | 0     | 0                | Prevent redirect packet log flooding          |
+| Tunable                        | Value | Default | Description                                   |
+| ------------------------------ |:-----:|:-------:| --------------------------------------------- |
+| net.inet.tcp.drop_synfin       | 1     | 0       | Drop SYN-FIN packets (breaks RFC1379)         |
+| net.inet6.ip6.redirect         | 0     | 1       | Disable sending IPv6 redirects                |
+| net.inet.tcp.syncookies        | 1     | 1       | SYN cookies for SYN-ACK packets               |
+| net.inet.tcp.delayed_ack       | 0     | 1       | Disable delayed ACK piggybacking              |
+| net.inet.icmp.drop_redirect    | 1     | 0       | Drop all inbound ICMP redirect packets        |
+| security.bsd.see_other_gids    | 0     | 1       | Hide processes from other groups              |
+| security.bsd.see_other_uids    | 0     | 1       | Hide processes from other users               |
+| hw.ibrs_disable                | 1     | 0       | Disable Spectre V2 mitigation                 |
+| net.inet.ip.redirect           | 0     | 1       | Disable sending ICMP redirects                |
+| net.inet.tcp.icmp_may_rst      | 0     | 1       | Disable ICMP unreachable aborting connections |
+| net.inet.ip.check_interface    | 1     | 0       | Enable interface checking                     |
+| net.inet.ip.sourceroute        | 0     | 0       | Prevent source routing attacks                |
+| net.inet.ip.accept_sourceroute | 0     | 0       | Prevent accepting source routed packets       |
+| net.inet.icmp.log_redirect     | 0     | 0       | Prevent redirect packet log flooding          |
+
 ## Network Performance & Buffers
 
 | Tunable                   | Value    | Default | Description                        |

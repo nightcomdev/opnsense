@@ -1,9 +1,11 @@
 # TUNABLES optimization for OPNsense and i226-V
 Here you can find tunables that I optimazed for my network. Default values are values used by Opnsense. All informations and descriptions are from internet like blogs, forums, documentation of OPNsense and FreeBSD.
 
-Content will be added with time, I have all my data offline.
+Content will be added with time, please be patient. 
 
-### Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other values. Network card Intel i226-V was upgraded to firmware v2.32
+Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other values. Network card Intel i226-V was upgraded to firmware v2.32
+
+### Before any changes make BACKUP of your config!
 
 # OPNsense System Tunables Configuration
 

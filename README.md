@@ -4,7 +4,9 @@ This repository contains tips & tricks and optimization of Opnsense, Unbound and
 ## Main menu of repository 
 - [tunables](https://github.com/nightcomdev/opnsense/tree/main/tunables)
 - [Unbound](https://github.com/nightcomdev/opnsense/tree/main/Unbound)
+- [QoS](https://github.com/nightcomdev/opnsense/tree/main/QoS)
 - [Intel i226-V Firmware upgrade](https://github.com/nightcomdev/opnsense/tree/main/i226-firmware-upgrade)
+
 
 
 ## Hardware

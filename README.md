@@ -4,7 +4,7 @@ This repository contains tips & tricks, optimization and tuning of Unbound, QoS,
 #### Always use testing environment, don't work in production environment!
 #### All changes in your config you doing on your own risk!
 
-## Main menu 
+# Main menu 
 - [Tunables](https://github.com/nightcomdev/opnsense/tree/main/tunables)
 - [Unbound](https://github.com/nightcomdev/opnsense/tree/main/Unbound)
 - [QoS](https://github.com/nightcomdev/opnsense/tree/main/QoS)
@@ -12,7 +12,7 @@ This repository contains tips & tricks, optimization and tuning of Unbound, QoS,
 
 
 
-## Hardware
+# Hardware
 Hardware used during tuning:
 - Intel N5105
 - 4x Intel i226-V

@@ -5,7 +5,7 @@ Content will be added with time, please be patient.
 
 Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other values. Network card Intel i226-V was upgraded to firmware v2.32
 
-### Before any changes make BACKUP of your config!
+#### Before any changes make BACKUP of your current config!
 
 # OPNsense System Tunables Configuration
 

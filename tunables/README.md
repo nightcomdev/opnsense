@@ -90,7 +90,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | dev.igc.1.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | dev.igc.2.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | dev.igc.3.eee_control     | 0     | 1       | Disable Energy Efficient Ethernet           |
-| hw.igc.max_interrupt_rate | 10000 | 8000    | Max interrupts per second (8k)              |
+| hw.igc.max_interrupt_rate | 10000 | 8000    | Max interrupts per second (8k) You can test with higher values if you have better ethernet card |
 | hw.igc.enable_aim         | 2     | 1       | Adaptive interrupt moderation (low latency) |
 
 

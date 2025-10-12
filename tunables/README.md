@@ -56,6 +56,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.sendbuf_inc	 | 65536 | 8192    | Send buffer increment step size      |
 | net.inet.tcp.minmss       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | net.link.ifqmaxlen        | 1024  | 50      | Max send queue size                  |
+| kern.ipc.maxsockets	      | 65536 | 65536 | Maximum number of sockets              |
 
 
 ## TCP Optimization & Algorithms

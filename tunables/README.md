@@ -120,3 +120,41 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.isr.defaultqlimit       | 512    | 256      | Default netisr queue limit     |
 | net.isr.direct_force	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use direct instead hybrid |
 | net.route.netisr_maxqlen	  | 512    | 1024     | Max routing socket queue length |
+
+
+## IPv6 Privacy & Configuration
+
+| Tunable                     | Value  | Default  | Description                    |
+| --------------------------- |:------:|:--------:|:------------------------------:|
+| net.inet6.ip6.use_tempaddr	| 1      | 0        | Enable IPv6 privacy addresses (RFC 4941) |
+| net.inet6.ip6.prefer_tempaddr | 1    | 0        | Prefer privacy addresses over normal     |
+
+
+## Memory & ARC (ZFS)
+
+| Tunable                     | Value  | Default  | Description                    |
+| --------------------------- |:------:|:--------:|:------------------------------:|
+| vfs.zfs.arc_max	            | 2147483648 | Auto | Max ARC size in bytes (2GB)    |
+| vfs.zfs.arc_min	            | 536870912  | Auto | Min ARC size in bytes (512MB)  |
+| vfs.read_max	              | 128        |      | Improves read-ahead behavior for proxy / Unbound / local caching |
+
+
+## ICMP & Multicast
+
+| Tunable                     | Value  | Default  | Description                    |
+| --------------------------- |:------:|:--------:|:------------------------------:|
+| net.inet.icmp.icmplim	      | 1000   | 200      | ICMP packet rate limit         |
+| net.inet.icmp.bmcastecho	  | 0      | 1        | Disable multicast echo replies |
+| net.inet.icmp.maskrepl	    | 0      | 1        | Disable mask request replies   |
+
+
+## Bridge & TAP Settings
+
+| Tunable                     | Value  | Default  | Description                    |
+| --------------------------- |:------:|:--------:|:------------------------------:|
+| net.link.bridge.pfil_onlyip	| 1      | 0        | Handle only IP packets in bridge |
+| net.link.bridge.pfil_local_phys	| 1  | 0        | Filter on physical interface   |
+| net.link.bridge.pfil_member	 | 0     | 1        | Disable filtering on member interfaces |
+| net.link.bridge.pfil_bridge	 | 1     | 0        | Enable filtering on bridge interface |
+| net.link.tap.user_open	     | 1     | 0        | Allow unprivileged TAP access |
+| net.link.ether.inet.max_age	 | 1200  | 1200     | ARP entry lifetime in seconds. You can lower 600-300 if using HA/CARP |

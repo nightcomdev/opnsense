@@ -100,7 +100,11 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | Tunable                   | Value | Default | Description                                 |
 | ------------------------- |:-----:|:-------:|:-------------------------------------------:|
 | kern.sched.preempt_thresh | 240   | 0       | Max priority for preemption                 |
-| kern.ipc.soacceptqueue    | 2048  | 128     | Max listen socket queue size                |
+| kern.ipc.soacceptqueue    | 1024  | 128     | Max listen socket queue size                |
+| kern.randompid	          | 1     | 0       | Randomize process IDs                       |
+| hw.syscons.kbd_reboot	    | 0     | 1       | Disable CTRL+ALT+DEL reboot                 |
+| kern.random.fortuna.minpoolsize	| 128 | 64 | Min entropy pool size for reseed             |
+| kern.random.harvest.mask	| 33119 | 511    | Entropy harvesting mask                      |
 
 
 ## Network Stack & RSS

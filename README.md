@@ -19,5 +19,5 @@ Hardware used during tuning:
 - 16GB RAM
 - 500GB M.2 SSD
 - Internet Odido fiber Netherlands 1Gbps Upload/Download
-
-Soon more data....
+- QoS 920Mbps Upload/Download
+- LAN 2.5Gbps

@@ -49,9 +49,9 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.sendbuf_max  | 4194304  | 2097152 | Max automatic send buffer (4MB)    |
 | net.inet.tcp.sendspace    | 65536    | 32768   | Initial send socket buffer size    |
 | net.inet.tcp.recvspace    | 65536    | 65536   | Initial receive socket buffer size |
-| net.inet.udp.recvspace    | 65536    | 42080   | Max incoming UDP datagram space    |
-| net.inet.udp.sendspace    | 65536    | 9216    | Max outgoing UDP datagram space    |
-| net.inet.udp.maxdgram     | 57344 | 9216    | Max outgoing UDP datagram size       |
+| net.inet.udp.recvspace    | 131072    | 42080   | Max incoming UDP datagram space    |
+| net.inet.udp.sendspace    | 131072    | 9216    | Max outgoing UDP datagram space    |
+| net.inet.udp.maxdgram     | 65536 | 9216    | Max outgoing UDP datagram size       |
 | net.local.dgram.maxdgram  | 2048  | 2048    | Max outgoing local UDP datagram size |
 | net.inet.tcp.sendbuf_inc	 | 65536 | 8192    | Send buffer increment step size      |
 | net.inet.tcp.minmss       | 536   | 216     | Minimum TCP Maximum Segment Size     |

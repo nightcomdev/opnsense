@@ -8,7 +8,6 @@ Read carefully and adjust to your needs. If you have stronger hardware you can r
 #### Before any changes make BACKUP of your current config!
 
 # OPNsense System Tunables Configuration
-
 This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 - CPU N5105
 - 16GB RAM
@@ -16,6 +15,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 - M.2 SSD
 - ZFS file system
 - internet 1Gbps fiber Upload/Download
+- QoS 920Mbps Upload/Download
 - LAN 2.5Gbps
 
 ## Network Security & Hardening

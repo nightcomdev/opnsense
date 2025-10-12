@@ -116,3 +116,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | Bind netisr threads to CPUs | 4      | 1        | Max CPUs for netisr processing |
 | net.inet.rss.enabled        | 1      | 0        | Enable Receive Side Scaling    |
 | net.inet.rss.bits           | 2      | 0        | RSS bits configuration         |
+| net.inet.ip.fastforwarding	| 1      | 0        | Enable IP fast forwarding      |
+| net.isr.defaultqlimit       | 512    | 256      | Default netisr queue limit     |
+| net.isr.direct_force	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use direct instead hybrid |
+| net.route.netisr_maxqlen	  | 512    | 1024     | Max routing socket queue length |

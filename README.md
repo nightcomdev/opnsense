@@ -21,3 +21,19 @@ Hardware used during tuning:
 - Internet Odido fiber Netherlands 1Gbps Upload/Download
 - QoS 920Mbps Upload/Download
 - LAN 2.5Gbps
+
+
+
+# Credits & Sources
+Here you can find links to sources from where I took all informations. Beside links I also used AI (ChatGPT & DeepSeek) to gather some informations or look for default data. Both AI's also analyzed those config files with very good feedback.
+
+- https://docs.opnsense.org/troubleshooting/performance.html
+- https://www.bentasker.co.uk/posts/blog/general/opnsense-pfsense-fttp-and-1gbps-pppoe.html
+- https://kings-guard.com/how-to-optimize-pfsense-plus-for-performance/
+- https://docs.netgate.com/pfsense/en/latest/hardware/tune.html
+- https://gist.github.com/jorisvervuurt/8ce01bb19de242484e2ec7f5c785e46b
+- https://binaryimpulse.com/2022/11/opnsense-performance-tuning-for-multi-gigabit-internet/
+- https://forum.opnsense.org
+- https://notes.xeome.dev/notes/OPNSense-Tuning
+- https://jeffmbelt.com/opnsense-1g-throughput.html
+- https://windgate.net/topton-n5095-n5105-n100-opnsense-proxmox-powersave-tuning/

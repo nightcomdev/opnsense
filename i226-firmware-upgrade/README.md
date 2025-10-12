@@ -15,8 +15,10 @@ This pack contains
 5) Intel doc on using nvmupdate64e
 
 ## More info about i226-V firmware upgrade
-For more informations about upgrading i226-V firmware go to repository of BillyCurtis
+#### For more informations about upgrading i226-V firmware go to repository of BillyCurtis
+
 https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware
 
-How do use Intel® Ethernet NVM Update Tool
+#### How do use Intel® Ethernet NVM Update Tool
+
 http://tmei-net.com/technology-sharing/how-do-use-intel-ethernet-nvm-update-tool.html

@@ -186,7 +186,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 
 | Tunable                     | Value  | Default  | Description                    |
 | --------------------------- |:------:|:--------:|:------------------------------:|
-| net.pf.source_nodes_hashsize	| 131072 | 8192  | PF source nodes hashtable size |
+| net.pf.source_nodes_hashsize	| 65536 | 8192  | PF source nodes hashtable size |
 
 
 ## Legal & License

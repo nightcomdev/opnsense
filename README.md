@@ -1,4 +1,4 @@
-# Optimizing OPNsense Performance
+# Tuning OPNsense Performance
 This repository contains tips & tricks and optimization of Opnsense, Unbound and Intel i226-V. Be aware that it's optimized for hardware listed in section Hardware, adjust config to your needs
 
 ## Main menu of repository 
@@ -10,7 +10,7 @@ This repository contains tips & tricks and optimization of Opnsense, Unbound and
 
 
 ## Hardware
-All info in this section is tuned under this hardware:
+Hardware used during tuning:
 - Intel N5105
 - 4x Intel i226-V
 - 16GB RAM

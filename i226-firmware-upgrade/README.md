@@ -1,5 +1,6 @@
 # Intel i226-V firmware upgrade v2.32
 This section will describe steps to upgrade firmware in your enthernet Intel i226-V from version 2.17 to 2.32
+#### Upgrading firmware you doing on your own risk! Please read all informations before you start doing your upgrade.
 
 ## Intel i226-V Firmware v2.32 upgrade pack
 
@@ -22,6 +23,9 @@ This pack contains:
 5. Firmware should be upgraded, REBOOT
 
 ## More info about i226-V firmware upgrade
+#### Topic on OPNsense forum
+https://forum.opnsense.org/index.php?topic=48695.0
+
 #### For more informations about upgrading i226-V firmware go to repository of BillyCurtis
 
 https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware

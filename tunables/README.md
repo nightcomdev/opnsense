@@ -63,7 +63,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 
 | Tunable                       | Value | Default | Description                            |
 | ----------------------------- |:-----:|:-------:|:--------------------------------------:|
-| net.inet.tcp.tso              | 0     | 1       | Disable TCP Segmentation Offload       |
+| net.inet.tcp.tso              | 0     | 1       | Disable TCP Segmentation Offload. 1 (enabled) Lower CPU, – slightly higher latency, – can cause bursty traffic / 2 (disabled) Lower jitter and latency, + better fairness under FQ-CoDel, – slightly more CPU use.        |
 | net.inet.tcp.soreceive_stream | 1     | 0       | Use soreceive_stream for TCP           |
 | net.inet.tcp.rfc1323          | 1     | 1       | Enable high performance TCP extensions |
 | net.inet.tcp.sendbuf_auto     | 1     | 1       | Automatic send buffer sizing           |

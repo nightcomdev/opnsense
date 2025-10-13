@@ -13,14 +13,18 @@ This repository contains tips & tricks, optimization and tuning of Unbound, QoS,
 
 # Hardware
 Hardware used during tuning:
-- Intel N5105
-- 4x Intel i226-V
+- CPU N5105
 - 16GB RAM
-- 500GB M.2 SSD
-- Internet Odido fiber Netherlands 1Gbps Upload/Download
+- 4x i226-V
+- M.2 SSD
+- ZFS
+- internet 1Gbps fiber Upload/Download
 - QoS 920Mbps Upload/Download
 - LAN 2.5Gbps
-
+- 40 devices Zigbee
+- 5 Virtual Machines
+- NAS
+- 7 smart devices
 
 
 # Credits & Sources

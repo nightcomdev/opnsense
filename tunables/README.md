@@ -125,7 +125,7 @@ Other Network data:
 | `net.inet.rss.bits`           | 2      | 0        | RSS bits configuration         |
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |
 | `net.isr.defaultqlimit`       | 512    | 256      | Default netisr queue limit     |
-| `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use direct instead hybrid |
+| `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use `direct` instead `hybrid`. `0`=disabled and `1`=enabled |
 | `net.route.netisr_maxqlen`	  | 512    | 1024     | Max routing socket queue length |
 
 

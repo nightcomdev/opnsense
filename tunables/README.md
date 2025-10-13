@@ -70,9 +70,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
-| net.inet.tcp.cc.algorithm      | cubic | newreno | TCP Congestion control algorithm. 
-                                                     `newreno` Classic, very conservative growth. Low bandwidth, stable links, legacy devices
-                                                     `htc` |
+| net.inet.tcp.cc.algorithm      | cubic | newreno | TCP Congestion control algorithm. `newreno` Classic, very conservative growth. Low bandwidth, stable links, legacy devices. `htcp` Faster ramp-up, fairness improvements over newreno. Medium-to-high latency links. `cubic` |
 | net.inet.tcp.cc.abe            | 1     | 0       | TCP Alternative Backoff with ECN     |
 | net.inet.tcp.rfc6675_pipe      | 1     | 0       | RFC6675 pipe calculation             |
 | net.inet.tcp.abc_l_var         | 44    | 2       | Max cwnd increment during slow-start |

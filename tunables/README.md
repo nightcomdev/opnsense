@@ -14,6 +14,8 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 - 4x i226-V
 - M.2 SSD
 - ZFS
+
+Other Network data:
 - internet 1Gbps fiber Upload/Download
 - QoS 920Mbps Upload/Download
 - LAN 2.5Gbps

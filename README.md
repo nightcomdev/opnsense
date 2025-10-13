@@ -24,7 +24,7 @@ Hardware used during tuning:
 
 
 # Credits & Sources
-Here you can find links to sources from where I took all informations. Beside links I also used AI (ChatGPT & DeepSeek) to gather some informations or look for default data. Both AI's also analyzed those config files with very good feedback. Changes adviced by AI in my case didn't make any sens to data provided by OPNsense and FreeBSD documentations and could cause issues during boot or with resources. I advice NOT to follow blindly any suggestions provided by AI but instead I advice to deep dive in to documentation of OPNsense and FreeBSD and use AI as advanced search engine.
+Here you can find links to sources from where I took all informations. Beside links I also used AI (ChatGPT & DeepSeek) to gather some informations or look for default data. Both AI's also analyzed those config files with very good feedback. Changes adviced by AI in my case didn't make any sens to data provided by OPNsense and FreeBSD documentations and could cause issues during boot or with resources. I advice NOT to follow blindly any suggestions provided by AI but instead I advice to deep dive in to documentation of OPNsense and FreeBSD and use AI as advanced search engine only!
 
 - https://docs.opnsense.org/troubleshooting/performance.html
 - https://www.bentasker.co.uk/posts/blog/general/opnsense-pfsense-fttp-and-1gbps-pppoe.html

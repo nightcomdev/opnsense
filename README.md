@@ -12,12 +12,14 @@ This repository contains tips & tricks, optimization and tuning of Unbound, QoS,
 
 
 # Hardware
-Hardware used during tuning:
+### Hardware used during tuning, main router:
 - CPU N5105
 - 16GB RAM
 - 4x i226-V
 - M.2 SSD
 - ZFS
+
+### Other Network data:
 - internet 1Gbps fiber Upload/Download
 - QoS 920Mbps Upload/Download
 - LAN 2.5Gbps

@@ -71,7 +71,8 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
 | net.inet.tcp.cc.algorithm      | cubic | newreno | TCP Congestion control algorithm. `newreno` Classic, very conservative growth. Low bandwidth, stable links, legacy devices. `htcp` Faster ramp-up, fairness improvements over newreno. Medium-to-high latency links. `cubic` Default in Linux and FreeBSD; fast, stable, scalable. Modern broadband and datacenter links. `bbr` Model-based (Google’s Bottleneck Bandwidth & RTT) — aims to minimize bufferbloat. Long-RTT or lossy links; can be “too aggressive” on low-latency fiber |
-| net.inet.tcp.cc.abe            | 1     | 0       | TCP Alternative Backoff with ECN     |
+| net.inet.tcp.cc.abe            | 1     | 0       | TCP Alternative Backoff with ECN. Accurate ECN (Explicit Congestion Notification) Behavior Enhancement. Normally, TCP uses packet loss as the only signal of congestion.
+With ECN enabled, routers can mark packets instead of dropping them when the queue begins to fill — telling the sender to slow down slightly before any loss occurs. Good combinantion with FQ-CoDel shaping + ECN enabled in queues + CUBIC congestion control that supports ABE extensions |
 | net.inet.tcp.rfc6675_pipe      | 1     | 0       | RFC6675 pipe calculation             |
 | net.inet.tcp.abc_l_var         | 44    | 2       | Max cwnd increment during slow-start |
 | net.inet.tcp.initcwnd_segments | 44    | 10      | Initial congestion window segments   |

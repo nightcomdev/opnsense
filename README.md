@@ -12,7 +12,7 @@ This repository contains tips & tricks, optimization and tuning of Unbound, QoS,
 
 
 # Hardware
-### Hardware used during tuning, main router:
+### Hardware used during tuning, main router Hunsn RJ03:
 - CPU N5105
 - 16GB RAM
 - 4x i226-V

@@ -63,14 +63,16 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 
 | Tunable                       | Value | Default | Description                            |
 | ----------------------------- |:-----:|:-------:|:--------------------------------------:|
-| net.inet.tcp.tso              | 0     | 1       | Disable TCP Segmentation Offload. 1 (enabled) Lower CPU, – slightly higher latency, – can cause bursty traffic / 0 (disabled) Lower jitter and latency, + better fairness under FQ-CoDel, – slightly more CPU use.        |
-| net.inet.tcp.soreceive_stream | 1     | 0       | Use soreceive_stream for TCP           |
+| net.inet.tcp.tso              | 0     | 1       | Disable TCP Segmentation Offload. `1` (enabled) Lower CPU, – slightly higher latency, – can cause bursty traffic / `0` (disabled) Lower jitter and latency, + better fairness under FQ-CoDel, – slightly more CPU use.        |
+| net.inet.tcp.soreceive_stream | 1     | 0       | Use soreceive_stream for TCP. `0` Use the traditional BSD socket receive path (called “soreceive_dgram”) / `1` Use the streamlined TCP receive path (“soreceive_stream”), optimized for continuous byte streams          |
 | net.inet.tcp.rfc1323          | 1     | 1       | Enable high performance TCP extensions |
 | net.inet.tcp.sendbuf_auto     | 1     | 1       | Automatic send buffer sizing           |
 | net.inet.tcp.recvbuf_auto     | 1     | 1       | Automatic receive buffer sizing        |
 | net.inet.tcp.fastopen         | 1     | 0       | Enable TCP Fast Open                   |
 | net.inet.tcp.sack.enable      | 1     | 1       | Enable TCP Selective ACK               |
-| net.inet.tcp.cc.algorithm      | cubic | newreno | Congestion control algorithm         |
+| net.inet.tcp.cc.algorithm      | cubic | newreno | TCP Congestion control algorithm. 
+                                                     `newreno` Classic, very conservative growth. Low bandwidth, stable links, legacy devices
+                                                     `htc` |
 | net.inet.tcp.cc.abe            | 1     | 0       | TCP Alternative Backoff with ECN     |
 | net.inet.tcp.rfc6675_pipe      | 1     | 0       | RFC6675 pipe calculation             |
 | net.inet.tcp.abc_l_var         | 44    | 2       | Max cwnd increment during slow-start |

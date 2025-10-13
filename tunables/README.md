@@ -113,7 +113,7 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | --------------------------- |:------:|:--------:|:------------------------------:|
 | `net.isr.dispatch`            | hybrid | deferred | NetISR dispatch policy         |
 | `net.isr.bindthreads`         | 1      | 0        | Bind netisr threads to CPUs    |
-| `Bind netisr threads to CPUs` | 4      | 1        | Max CPUs for netisr processing |
+| `net.isr.maxthreads`          | 4      | 1        | Max CPUs for netisr processing |
 | `net.inet.rss.enabled`        | 1      | 0        | Enable Receive Side Scaling    |
 | `net.inet.rss.bits`           | 2      | 0        | RSS bits configuration         |
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |

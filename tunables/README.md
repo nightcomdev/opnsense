@@ -23,10 +23,10 @@ This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 | Tunable                        | Value | Default | Description                                   |
 | ------------------------------ |:-----:|:-------:| --------------------------------------------- |
 | net.inet.tcp.drop_synfin       | 1     | 0       | Drop SYN-FIN packets (breaks RFC1379)         |
-| net.inet6.ip6.redirect         | 0     | 1       | Disable sending IPv6 redirects                |
+| net.inet6.ip6.redirect         | 0     | 1       | Disable sending IPv6 redirects. You can enable it if you have more then one router or two internal routers on the same VLAN |
 | net.inet.tcp.syncookies        | 1     | 1       | SYN cookies for SYN-ACK packets               |
-| net.inet.tcp.delayed_ack       | 0     | 1       | Disable delayed ACK piggybacking              |
-| net.inet.icmp.drop_redirect    | 1     | 0       | Drop all inbound ICMP redirect packets        |
+| net.inet.tcp.delayed_ack       | 0     | 1       | Disable delayed ACK piggybacking. `0` send an ACK immediately for every segment. Helps responsiveness and small-packet workloads (like gaming, DNS, control traffic) `1` enable delayed ACKs (wait a short time before replying). Helps large file transfers or high-connection servers by sending fewer ACKs. |
+| net.inet.icmp.drop_redirect    | 1     | 0       | Drop all inbound ICMP redirect packets. This tunable tells the kernel whether to accept or drop ICMP Redirect messages from other devices. `0`=accept (Default) `1`=drop it means OPNsense will simply ignore all ICMP Redirects, routing tables stay fixed, no chance of redirect-based spoofing or route confusion and no more “ICMP redirect” messages in logs. This does not break normal ICMP functions (ping, traceroute, etc.). It only ignores “redirect” control messages |
 | security.bsd.see_other_gids    | 0     | 1       | Hide processes from other groups              |
 | security.bsd.see_other_uids    | 0     | 1       | Hide processes from other users               |
 | hw.ibrs_disable                | 1     | 0       | Disable Spectre V2 mitigation                 |

@@ -26,7 +26,10 @@ Hardware used during tuning:
 # Credits & Sources
 Here you can find links to sources from where I took all informations. Beside links I also used AI (ChatGPT & DeepSeek) to gather some informations or look for default data. Both AI's also analyzed those config files with very good feedback. Changes adviced by AI in my case didn't make any sens to data provided by OPNsense and FreeBSD documentations and could cause issues during boot or with resources. I advice NOT to follow blindly any suggestions provided by AI but instead I advice to deep dive in to documentation of OPNsense and FreeBSD and use AI as advanced search engine only!
 
+### Sources
+- https://docs.netgate.com/pfsense/en/latest/config/advanced-tunables.html
 - https://docs.opnsense.org/troubleshooting/performance.html
+- https://docs.opnsense.org/troubleshooting/hardening.html
 - https://www.bentasker.co.uk/posts/blog/general/opnsense-pfsense-fttp-and-1gbps-pppoe.html
 - https://kings-guard.com/how-to-optimize-pfsense-plus-for-performance/
 - https://docs.netgate.com/pfsense/en/latest/hardware/tune.html
@@ -36,3 +39,5 @@ Here you can find links to sources from where I took all informations. Beside li
 - https://notes.xeome.dev/notes/OPNSense-Tuning
 - https://jeffmbelt.com/opnsense-1g-throughput.html
 - https://windgate.net/topton-n5095-n5105-n100-opnsense-proxmox-powersave-tuning/
+- https://medium.com/@truvis.thornton/opnsense-firewall-configuration-performance-tuning-for-multi-gigabit-internet-and-better-speeds-in-cfc80c49c544
+- https://blog.miniserver.it/en/pfsense/tuning-and-troubleshooting-network-cards/

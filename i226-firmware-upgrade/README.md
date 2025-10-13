@@ -26,7 +26,7 @@ This pack contains:
 #### Topic on OPNsense forum
 https://forum.opnsense.org/index.php?topic=48695.0
 
-#### For more informations about upgrading i226-V firmware go to repository of BillyCurtis
+#### For more informations about upgrading i226-V firmware or other versions of images go to repository of BillyCurtis.
 
 https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware
 

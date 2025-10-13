@@ -24,6 +24,7 @@ Other Network data:
 - NAS
 - 7 smart devices
 
+# Tunables
 ## Network Security & Hardening
 
 | Tunable                        | Value | Default | Description                                   |

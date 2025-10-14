@@ -175,7 +175,7 @@ Other Network data:
 | --------------------------- |:------:|:--------:|:------------------------------:|
 | `net.inet.ip.intr_queue_maxlen`	| 1024 | 50       | Max IP input queue size        |
 | `net.inet6.ip6.intr_queue_maxlen`	| 1024 | 50     | Max IPv6 input queue size      |
-| `net.igc.num_queues`	         | 4      | 1       | Number of IGC queues           |
+| `net.igc.num_queues`	         | 4      | 1       | Number of IGC queues. Value depends how many physical cores are in your CPU - number of cores used for RX/TX processing |
 | `net.igc.tx_ring_size`	       | 1024   | 512     | TX ring size                   |
 | `net.igc.rx_ring_size`	       | 1024   | 512     | RX ring size                   |
 

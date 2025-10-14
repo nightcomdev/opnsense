@@ -24,7 +24,9 @@ This pack contains:
 4. Copy MAC address and paste it in next line without `:`
 5. `./nvmupdate64e -b -l nvm.log -m 00E0B468DCBC -f -u -c nvm.cfg`
 6. Run `dmesg |grep igc0` and confirm that firmware changed from 2.17 -> 2.32
-7. Firmware should be upgraded, REBOOT
+7. Firmware is upgraded, REBOOT
+
+   **Be aware that when you upgrade your LAN NIC you will loose connection if you doing this remotely, in this case leave it for 1-2min to finish task and then REBOOT**
 
 ## More info about i226-V firmware upgrade
 #### Topic on OPNsense forum

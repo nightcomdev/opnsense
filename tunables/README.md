@@ -173,8 +173,8 @@ Other Network data:
 
 | Tunable                     | Value  | Default  | Description                    |
 | --------------------------- |:------:|:--------:|:------------------------------:|
-| `net.inet.ip.intr_queue_maxlen`	| 1024 | 50       | Max IP input queue size        |
-| `net.inet6.ip6.intr_queue_maxlen`	| 1024 | 50     | Max IPv6 input queue size      |
+| `net.inet.ip.intr_queue_maxlen`	| 1024 | 1000       | Max IP input queue size. When a packet is handed off from the NIC driver (e.g., `igc`) to the IP input queue, it’s placed into a software queue called the IP interrupt queue (`ipintrq`) `net.inet.ip.intr_queue_maxlen` sets the maximum number of packets that this queue can hold before the kernel starts dropping new ones. |
+| `net.inet6.ip6.intr_queue_maxlen`	| 1024 | 1000     | Max IPv6 input queue size      |
 | `net.igc.num_queues`	         | 4      | 1       | Number of IGC queues. Value depends how many physical cores are in your CPU - number of cores used for RX/TX processing |
 | `net.igc.tx_ring_size`	       | 1024   | 512     | TX ring size                   |
 | `net.igc.rx_ring_size`	       | 1024   | 512     | RX ring size                   |

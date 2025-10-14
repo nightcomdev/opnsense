@@ -64,7 +64,6 @@ Other Network data:
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 50      | Max send queue size                  |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
-| `net.isr.defaultqlimit`     |       |       |                                        |
 
 
 ## TCP Optimization & Algorithms

@@ -15,7 +15,9 @@ This pack contains:
 4) nvmupdate64e util from the Intel 34.0 download bundle
 5) Intel doc on using nvmupdate64e
 
-#### Steps to upgrade your ethernet card
+#### Check config file and adjust to your hardware!
+
+### Steps to upgrade your ethernet card
 1. Copy and unzip files to your OPNsense router
 2. Check what card do you have `dmesg |grep igc0` change number if you have multiple cards igc1, igc2...
 3. Copy MAC address and paste it in next line without `:`

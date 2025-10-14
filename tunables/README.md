@@ -99,7 +99,7 @@ Other Network data:
 | `dev.igc.2.eee_control`     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | `dev.igc.3.eee_control`     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | `hw.igc.max_interrupt_rate` | 10000 | 8000    | Max interrupts per second (10k). 8000 is also good and keep latency low. You can test with higher values if you have better ethernet card |
-| `hw.igc.enable_aim`         | 2     | 1       | Adaptive interrupt moderation (2=low latency, 1=normal) |
+| `hw.igc.enable_aim`         | 2     | 1       | Adaptive interrupt moderation. `2`=low latency Adaptive Interrupt Moderation (AIM) — dynamically adjusts interrupt rate based on load., `1`=normal Static interrupt moderation — not adaptive. (Fixed delay intervals), `0`=disabled Every packet (or small group) triggers immediate interrupt. Lowest latency, highest CPU interrupt rate |
 | `hw.igc.rx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
 | `hw.igc.tx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
 | `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle. This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |

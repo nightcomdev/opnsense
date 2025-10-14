@@ -20,9 +20,10 @@ This pack contains:
 ### Steps to upgrade your ethernet card
 1. Copy and unzip files to your OPNsense router
 2. Check what card do you have `dmesg |grep igc0` change number if you have multiple cards igc1, igc2...
-3. Copy MAC address and paste it in next line without `:`
-4. `./nvmupdate64e -b -l nvm.log -m 00E0B468DCBC -f -u -c nvm.cfg`
-5. Firmware should be upgraded, REBOOT
+3. Check nvm.cfg is it correct with informations from `dmesg |grep igc0` if not then adjust to your hardware informations
+4. Copy MAC address and paste it in next line without `:`
+5. `./nvmupdate64e -b -l nvm.log -m 00E0B468DCBC -f -u -c nvm.cfg`
+6. Firmware should be upgraded, REBOOT
 
 ## More info about i226-V firmware upgrade
 #### Topic on OPNsense forum

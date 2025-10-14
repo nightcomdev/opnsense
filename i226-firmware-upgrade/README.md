@@ -33,6 +33,6 @@ https://forum.opnsense.org/index.php?topic=48695.0
 
 https://github.com/BillyCurtis/Intel-I226-V-NVM-Firmware
 
-#### How do use Intel® Ethernet NVM Update Tool
+#### How to use Intel® Ethernet NVM Update Tool
 
 http://tmei-net.com/technology-sharing/how-do-use-intel-ethernet-nvm-update-tool.html

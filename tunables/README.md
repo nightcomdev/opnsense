@@ -64,6 +64,7 @@ Other Network data:
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 50      | Max send queue size                  |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
+| `net.isr.defaultqlimit`     |       |       |                                        |
 
 
 ## TCP Optimization & Algorithms
@@ -103,6 +104,8 @@ Other Network data:
 | `hw.igc.rx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
 | `hw.igc.tx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
 | `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle. This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |
+| `hw.igc.rx_abs_int_delay`   |  0    |         |                                            |
+| `hw.igc.tx_abs_int_delay`   | 0     |         |                                            |
 
 
 ## System & Process Management

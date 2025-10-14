@@ -102,8 +102,7 @@ Other Network data:
 | `hw.igc.enable_aim`         | 2     | 1       | Adaptive interrupt moderation (2=low latency, 1=normal) |
 | `hw.igc.rx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
 | `hw.igc.tx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
-| `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle.
-This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |
+| `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle. This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |
 
 
 ## System & Process Management

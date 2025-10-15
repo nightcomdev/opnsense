@@ -62,7 +62,7 @@ Other Network data:
 | `net.local.dgram.maxdgram`  | 2048  | 2048    | Max outgoing local UDP datagram size |
 | `net.inet.tcp.sendbuf_inc`	 | 65536 | 8192    | Send buffer increment step size      |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
-| `net.link.ifqmaxlen`        | 1024  | 50      | Max send queue size                  |
+| `net.link.ifqmaxlen`        | 1024  | 512      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
 
 
@@ -100,8 +100,8 @@ Other Network data:
 | `dev.igc.3.eee_control`     | 0     | 1       | Disable Energy Efficient Ethernet           |
 | `hw.igc.max_interrupt_rate` | 10000 | 8000    | Max interrupts per second (10k). 8000 is also good and keep latency low. You can test with higher values if you have better ethernet card |
 | `hw.igc.enable_aim`         | 2     | 1       | Adaptive interrupt moderation. `2`=low latency Adaptive Interrupt Moderation (AIM) — dynamically adjusts interrupt rate based on load., `1`=normal Static interrupt moderation — not adaptive. (Fixed delay intervals), `0`=disabled Every packet (or small group) triggers immediate interrupt. Lowest latency, highest CPU interrupt rate |
-| `hw.igc.rx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
-| `hw.igc.tx_process_limit`   | -1    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
+| `hw.igc.rx_process_limit`   | 1024    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
+| `hw.igc.tx_process_limit`   | 1024    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
 | `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle. This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |
 | `hw.igc.rx_abs_int_delay`   |  0    |         |                                            |
 | `hw.igc.tx_abs_int_delay`   | 0     |         |                                            |
@@ -129,9 +129,9 @@ Other Network data:
 | `net.inet.rss.enabled`        | 1      | 0        | Enable Receive Side Scaling    |
 | `net.inet.rss.bits`           | 2      | 0        | RSS bits configuration         |
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |
-| `net.isr.defaultqlimit`       | 512    | 256      | Default netisr queue limit     |
+| `net.isr.defaultqlimit`       | 1024   | 256      | Default netisr queue limit. Defines the maximum number of packets that each software interrupt (netisr) queue can hold before new packets are dropped. Set `512` if you look for very low latency |
 | `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use `direct` instead `hybrid`. `0`=disabled and `1`=enabled |
-| `net.route.netisr_maxqlen`	  | 512    | 256     | Max routing socket queue length |
+| `net.route.netisr_maxqlen`	  | 512    | 256     | Max routing socket queue length. Defines the maximum number of packets or routing events that can be queued in the routing netisr queue. Think of it as the work queue for the routing thread inside the network ISR (interrupt service routine) framework. Set it to `256` is you search for low latency. |
 
 
 ## IPv6 Privacy & Configuration

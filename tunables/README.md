@@ -36,10 +36,10 @@ Other Network data:
 | `net.inet.icmp.drop_redirect`    | 1     | 0       | Drop all inbound ICMP redirect packets. This tunable tells the kernel whether to accept or drop ICMP Redirect messages from other devices. `0`=accept (Default) `1`=drop it means OPNsense will simply ignore all ICMP Redirects, routing tables stay fixed, no chance of redirect-based spoofing or route confusion and no more “ICMP redirect” messages in logs. This does not break normal ICMP functions (ping, traceroute, etc.). It only ignores “redirect” control messages |
 | `security.bsd.see_other_gids`    | 0     | 1       | Hide processes from other groups              |
 | `security.bsd.see_other_uids`    | 0     | 1       | Hide processes from other users               |
-| `hw.ibrs_disable`                | 1     | 0       | Disable Spectre V2 mitigation                 |
-| `net.inet.ip.redirect`           | 0     | 1       | Disable sending ICMP redirects                |
-| `net.inet.tcp.icmp_may_rst`      | 0     | 1       | Disable ICMP unreachable aborting connections |
-| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking                     |
+| `hw.ibrs_disable`                | 1     | 0       | Disable Spectre V2 mitigation `0`=enabled  `1`=disabled |
+| `net.inet.ip.redirect`           | 0     | 1       | Disable sending ICMP redirects `0`=disabled  `1`=enabled |
+| `net.inet.tcp.icmp_may_rst`      | 0     | 1       | Disable ICMP unreachable aborting connections `0`=disabled  `1`=enabled |
+| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking `0`=disabled  `1`=enabled |
 | `net.inet.ip.sourceroute`        | 0     | 0       | Prevent source routing attacks                |
 | `net.inet.ip.accept_sourceroute` | 0     | 0       | Prevent accepting source routed packets       |
 | `net.inet.icmp.log_redirect`     | 0     | 0       | Prevent redirect packet log flooding          |

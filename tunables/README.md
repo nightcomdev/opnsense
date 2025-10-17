@@ -51,7 +51,7 @@ Other Network data:
 | ------------------------- |:--------:|:-------:|:----------------------------------:|
 | `kern.ipc.maxsockbuf`	      | 16777216 | 2097152 | Maximum socket buffer size (16MB)  |
 | `kern.ipc.nmbjumbop`        | 65536    | 4096    | Max mbuf page size jumbo clusters  |
-| `kern.ipc.nmbclusters`      | 2000000  | 65536   | Max mbuf clusters allowed          |
+| `kern.ipc.nmbclusters`      | 200000  | 65536   | Max mbuf clusters allowed          |
 | `net.inet.tcp.recvbuf_max`	 | 4194304  | 2097152 | Max automatic receive buffer (4MB) |
 | `net.inet.tcp.sendbuf_max`  | 4194304  | 2097152 | Max automatic send buffer (4MB)    |
 | `net.inet.tcp.sendspace`    | 65536    | 32768   | Initial send socket buffer size    |

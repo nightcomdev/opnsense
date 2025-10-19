@@ -24,6 +24,10 @@ Other Network data:
 - NAS
 - 7 smart devices
 
+# Menu
+[Network Security & Hardening](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-security--hardening)
+[Network Performance & Buffers](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-performance--buffers)
+
 # Tunables
 ## Network Security & Hardening
 

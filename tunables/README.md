@@ -49,8 +49,8 @@ Other Network data:
 
 | Tunable                   | Value    | Default | Description                        |
 | ------------------------- |:--------:|:-------:|:----------------------------------:|
-| `kern.ipc.maxsockbuf`	      | 16777216 | 2097152 | Maximum socket buffer size (16MB), default 2MB  |
-| `kern.ipc.nmbjumbop`        | 65536    | 4096    | Max mbuf page size jumbo clusters  |
+| `kern.ipc.maxsockbuf`	      | 16777216 | 2097152 | Maximum socket buffer size (16MB), default 2MB. Sets the maximum total socket buffer size (send + receive) allowed for any TCP/UDP socket in the kernel. It defines the upper ceiling for: `net.inet.tcp.sendbuf_max`, `net.inet.tcp.recvbuf_max`, `net.inet.udp.recvspace`, `net.inet.udp.sendspace`  |
+| `kern.ipc.nmbjumbop`        | 65536    | 4096    | Max mbuf page size jumbo clusters. Sets the number of jumbo network mbuf clusters (16 KB buffers) that the kernel pre-allocates for large network packets and high-throughput workloads. Related with: `kern.ipc.nmbclusters`, `kern.ipc.nmbjumbo9`, `kern.ipc.nmbjumbop`, `kern.ipc.nmbufs` |
 | `kern.ipc.nmbclusters`      | 200000  | 65536   | Max mbuf clusters allowed          |
 | `net.inet.tcp.recvbuf_max`	 | 4194304  | 2097152 | Max automatic receive buffer (4MB), default 2MB |
 | `net.inet.tcp.sendbuf_max`  | 4194304  | 2097152 | Max automatic send buffer (4MB), default 2MB |

@@ -25,13 +25,13 @@ Other Network data:
 - 7 smart devices
 
 # Menu
-### [Network Security & Hardening](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-security--hardening)
+### [Network Security & Hardening](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-security--hardening-1)
 
 ### [Network Performance & Buffers](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-performance--buffers)
 
 ### [TCP Optimization & Algorithms](https://github.com/nightcomdev/opnsense/tree/main/tunables#tcp-optimization--algorithms)
 
-### [Hardware & Driver Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#hardware--driver-settings)
+### [Hardware & Driver Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#hardware--driver-settings-1)
 
 ### [System & Process Management](https://github.com/nightcomdev/opnsense/tree/main/tunables#system--process-management)
 

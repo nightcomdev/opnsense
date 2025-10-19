@@ -1,7 +1,7 @@
 # TUNABLES optimization for OPNsense and i226-V
 Here you can find tunables that I optimazed for my network. `Default` values are values used by OPNsense. All informations and descriptions are from internet like blogs, forums, documentation of OPNsense and FreeBSD - detalis you can find in bottom section **Credits & Sources** on main page of this repository.
 
-Content will be added with time, mostly descriptions for certain tunables. Please be patient.
+> Content will be added with time, mostly descriptions for certain tunables. Please be patient.
 
 Read carefully and adjust to your needs. If you have stronger hardware you can rise buffers and adjust some other values. Network card Intel i226-V (integrated) was upgraded to firmware v2.32 from v2.17. Network with this adjustments have still plenty of space to breathe I guess it can also operate on 2.5Gbps internet speed. Only I would adjust buffers like `kern.ipc.maxsockbuf`, `net.inet.tcp.recvbuf_max`....etc.
 

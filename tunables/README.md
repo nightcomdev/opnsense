@@ -27,31 +27,31 @@ Other Network data:
 # Menu
 ### [Network Security & Hardening](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-security--hardening-1)
 
-### [Network Performance & Buffers](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-performance--buffers)
+### [Network Performance & Buffers](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-performance--buffers-1)
 
-### [TCP Optimization & Algorithms](https://github.com/nightcomdev/opnsense/tree/main/tunables#tcp-optimization--algorithms)
+### [TCP Optimization & Algorithms](https://github.com/nightcomdev/opnsense/tree/main/tunables#tcp-optimization--algorithms-1)
 
 ### [Hardware & Driver Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#hardware--driver-settings-1)
 
-### [System & Process Management](https://github.com/nightcomdev/opnsense/tree/main/tunables#system--process-management)
+### [System & Process Management](https://github.com/nightcomdev/opnsense/tree/main/tunables#system--process-management-1)
 
-### [Network Stack & RSS](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-stack--rss)
+### [Network Stack & RSS](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-stack--rss-1)
 
-### [IPv6 Privacy & Configuration](https://github.com/nightcomdev/opnsense/tree/main/tunables#ipv6-privacy--configuration)
+### [IPv6 Privacy & Configuration](https://github.com/nightcomdev/opnsense/tree/main/tunables#ipv6-privacy--configuration-1)
 
-### [Memory & ARC (ZFS)](https://github.com/nightcomdev/opnsense/tree/main/tunables#memory--arc-zfs)
+### [Memory & ARC (ZFS)](https://github.com/nightcomdev/opnsense/tree/main/tunables#memory--arc-zfs-1)
 
-### [ICMP & Multicast](https://github.com/nightcomdev/opnsense/tree/main/tunables#icmp--multicast)
+### [ICMP & Multicast](https://github.com/nightcomdev/opnsense/tree/main/tunables#icmp--multicast-1)
 
-### [Bridge & TAP Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#bridge--tap-settings)
+### [Bridge & TAP Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#bridge--tap-settings-1)
 
-### [Network Interface Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-interface-settings)
+### [Network Interface Settings](https://github.com/nightcomdev/opnsense/tree/main/tunables#network-interface-settings-1)
 
-### [Power Management & CPU](https://github.com/nightcomdev/opnsense/tree/main/tunables#power-management--cpu)
+### [Power Management & CPU](https://github.com/nightcomdev/opnsense/tree/main/tunables#power-management--cpu-1)
 
-### [PF Firewall](https://github.com/nightcomdev/opnsense/tree/main/tunables#pf-firewall)
+### [PF Firewall](https://github.com/nightcomdev/opnsense/tree/main/tunables#pf-firewall-1)
 
-### [Legal & License](https://github.com/nightcomdev/opnsense/tree/main/tunables#legal--license)
+### [Legal & License](https://github.com/nightcomdev/opnsense/tree/main/tunables#legal--license-1)
 
 
 # Tunables

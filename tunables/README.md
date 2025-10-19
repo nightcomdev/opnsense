@@ -53,7 +53,7 @@ Other Network data:
  [Legal & License](https://github.com/nightcomdev/opnsense/tree/main/tunables#legal--license-1)
 
 
-# Tunables
+# Tunables settings
 ## Network Security & Hardening
 
 | Tunable                        | Value | Default | Description                                   |

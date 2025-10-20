@@ -1,5 +1,5 @@
 # Firewall QoS shaper
-All settings are the same for Upload/Download. You can also play with `Quantum` for example `1514`. 
+All settings are the same for Upload/Download. You can also play with `Quantum` for example `1514`. This is simplest way with 1Gbps fiber to provide QoS. More complex solution on the way...
 
 ![alt text](https://github.com/nightcomdev/opnsense/blob/main/QoS/images/pipe.PNG "Pipe Download")
 

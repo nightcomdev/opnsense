@@ -63,7 +63,7 @@ Other Network data:
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 512      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
-
+| `kern.ipc.soacceptqueue`    | 1024  | 128   | Defines the maximum number of pending TCP connections that can wait in a listen backlog before being accepted by a user process (like Unbound, Web UI, or a local daemon) |
 
 ## TCP Optimization & Algorithms
 

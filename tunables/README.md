@@ -59,8 +59,8 @@ Other Network data:
 | `net.inet.udp.sendspace`    | 131072    | 9216    | Max outgoing UDP datagram space    |
 | `net.inet.udp.maxdgram`     | 65536 | 9216    | Max outgoing UDP datagram size       |
 | `net.local.dgram.maxdgram`  | 2048  | 2048    | Max outgoing local UDP datagram size |
-| `net.inet.tcp.recvbuf_inc`  | 65536 |         |                                      |
-| `net.inet.tcp.sendbuf_inc`	| 65536 | 8192    | Send buffer increment step size      |
+| `net.inet.tcp.recvbuf_inc`  | 65536 | 16384   |                                      |
+| `net.inet.tcp.sendbuf_inc`	| 32768 | 8192    | Send buffer increment step size      |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 512      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |

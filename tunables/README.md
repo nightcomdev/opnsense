@@ -59,11 +59,13 @@ Other Network data:
 | `net.inet.udp.sendspace`    | 131072    | 9216    | Max outgoing UDP datagram space    |
 | `net.inet.udp.maxdgram`     | 65536 | 9216    | Max outgoing UDP datagram size       |
 | `net.local.dgram.maxdgram`  | 2048  | 2048    | Max outgoing local UDP datagram size |
-| `net.inet.tcp.sendbuf_inc`	 | 65536 | 8192    | Send buffer increment step size      |
+| `net.inet.tcp.recvbuf_inc`  | 65536 |         |                                      |
+| `net.inet.tcp.sendbuf_inc`	| 65536 | 8192    | Send buffer increment step size      |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 512      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
 | `kern.ipc.soacceptqueue`    | 1024  | 128   | Defines the maximum number of pending TCP connections that can wait in a listen backlog before being accepted by a user process (like Unbound, Web UI, or a local daemon) |
+| `net.inet.tcp.acc_ecn`      | 1     |       |                                        |
 
 ## TCP Optimization & Algorithms
 
@@ -111,7 +113,6 @@ Other Network data:
 | Tunable                   | Value | Default | Description                                 |
 | ------------------------- |:-----:|:-------:|:-------------------------------------------:|
 | `kern.sched.preempt_thresh` | 240   | 0       | Max priority for preemption                 |
-| `kern.ipc.soacceptqueue`    | 1024  | 128     | Max listen socket queue size                |
 | `kern.randompid`	          | 1     | 0       | Randomize process IDs                       |
 | `hw.syscons.kbd_reboot`	    | 0     | 1       | Disable CTRL+ALT+DEL reboot                 |
 | `kern.random.fortuna.minpoolsize`	| 128 | 64 | Min entropy pool size for reseed             |

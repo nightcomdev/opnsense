@@ -48,3 +48,5 @@ Here you can find links to sources from where I took all informations. Beside li
 - https://windgate.net/topton-n5095-n5105-n100-opnsense-proxmox-powersave-tuning/
 - https://medium.com/@truvis.thornton/opnsense-firewall-configuration-performance-tuning-for-multi-gigabit-internet-and-better-speeds-in-cfc80c49c544
 - https://blog.miniserver.it/en/pfsense/tuning-and-troubleshooting-network-cards/
+- https://man.freebsd.org/cgi/man.cgi?tuning
+- https://forums.freebsd.org/threads/tuning-7-freebsd-performance-tuning-manual.82944/

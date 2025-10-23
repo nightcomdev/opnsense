@@ -18,7 +18,7 @@ This pack contains:
 
 #### Check config file and adjust to your hardware!
 
-### Steps to upgrade your ethernet card
+## Steps to upgrade your ethernet card
 1. Copy and unzip files to your OPNsense router
 2. Check what card do you have `dmesg |grep igc0` change number if you have multiple cards igc1, igc2...
 3. Check `nvm.cfg` is it correct with informations from `dmesg |grep igc0` if not then adjust to your hardware informations

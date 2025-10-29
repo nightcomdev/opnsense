@@ -38,7 +38,7 @@ Other Network data:
 | `hw.ibrs_disable`                | 1     | 0       | Disable Spectre V2 mitigation `0`=enabled  `1`=disabled |
 | `net.inet.ip.redirect`           | 0     | 1       | Disable sending ICMP redirects `0`=disabled  `1`=enabled |
 | `net.inet.tcp.icmp_may_rst`      | 0     | 1       | Disable ICMP unreachable aborting connections `0`=disabled  `1`=enabled |
-| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking `0`=disabled  `1`=enabled When enabled, this setting causes the IP-stack to verify that an incoming IPv4 packet arrives on the interface that actually has the destination address (i.e., the packet’s destination IP must match an address configured on the receiving interface) before processing it |
+| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking `0`=disabled  `1`=enabled. When enabled, this setting causes the IP-stack to verify that an incoming IPv4 packet arrives on the interface that actually has the destination address (i.e., the packet’s destination IP must match an address configured on the receiving interface) before processing it |
 | `net.inet.ip.sourceroute`        | 0     | 0       | Prevent source routing attacks                |
 | `net.inet.ip.accept_sourceroute` | 0     | 0       | Prevent accepting source routed packets       |
 | `net.inet.icmp.log_redirect`     | 0     | 0       | Prevent redirect packet log flooding          |

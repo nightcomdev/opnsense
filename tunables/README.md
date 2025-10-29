@@ -38,7 +38,7 @@ Other Network data:
 | `hw.ibrs_disable`                | 1     | 0       | Disable Spectre V2 mitigation `0`=enabled  `1`=disabled |
 | `net.inet.ip.redirect`           | 0     | 1       | Disable sending ICMP redirects `0`=disabled  `1`=enabled |
 | `net.inet.tcp.icmp_may_rst`      | 0     | 1       | Disable ICMP unreachable aborting connections `0`=disabled  `1`=enabled |
-| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking `0`=disabled  `1`=enabled |
+| `net.inet.ip.check_interface`    | 1     | 0       | Enable interface checking `0`=disabled  `1`=enabled When enabled, this setting causes the IP-stack to verify that an incoming IPv4 packet arrives on the interface that actually has the destination address (i.e., the packet’s destination IP must match an address configured on the receiving interface) before processing it |
 | `net.inet.ip.sourceroute`        | 0     | 0       | Prevent source routing attacks                |
 | `net.inet.ip.accept_sourceroute` | 0     | 0       | Prevent accepting source routed packets       |
 | `net.inet.icmp.log_redirect`     | 0     | 0       | Prevent redirect packet log flooding          |
@@ -51,8 +51,8 @@ Other Network data:
 | `kern.ipc.maxsockbuf`	      | 33554432 | 2097152 | Maximum socket buffer size (32MB), default 2MB. Sets the maximum total socket buffer size (send + receive) allowed for any TCP/UDP socket in the kernel. It defines the upper ceiling for: `net.inet.tcp.sendbuf_max`, `net.inet.tcp.recvbuf_max`, `net.inet.udp.recvspace`, `net.inet.udp.sendspace`  |
 | `kern.ipc.nmbjumbop`        | 65536    | 4096    | Max mbuf page size jumbo clusters. Sets the number of jumbo network mbuf clusters (16 KB buffers) that the kernel pre-allocates for large network packets and high-throughput workloads. Related with: `kern.ipc.nmbclusters`, `kern.ipc.nmbjumbo9`, `kern.ipc.nmbjumbop`, `kern.ipc.nmbufs` |
 | `kern.ipc.nmbclusters`      | 200000  | 65536   | Max mbuf clusters allowed          |
-| `net.inet.tcp.recvbuf_max`	| 6291456  | 2097152 | Max automatic receive buffer (6MB), default 2MB |
-| `net.inet.tcp.sendbuf_max`  | 6291456  | 2097152 | Max automatic send buffer (6MB), default 2MB |
+| `net.inet.tcp.recvbuf_max`	| 6291456  | 2097152 | Max automatic receive buffer (6MB), default 2MB. This sets the maximum size of the TCP socket **receive buffer** that the kernel will allow for a connection. It limits how much TCP data can be buffered on the receiving side before being processed by the application or kernel. |
+| `net.inet.tcp.sendbuf_max`  | 6291456  | 2097152 | Max automatic send buffer (6MB), default 2MB. This sets the maximum size of the TCP socket send buffer that the kernel will allow for a connection. It limits how much data the kernel can buffer for sending (before the application or network “catches up”). |
 | `net.inet.tcp.sendspace`    | 131072    | 32768   | Initial send socket buffer size    |
 | `net.inet.tcp.recvspace`    | 131072    | 65536   | Initial receive socket buffer size |
 | `net.inet.udp.recvspace`    | 131072    | 42080   | Max incoming UDP datagram space    |

@@ -59,8 +59,8 @@ Other Network data:
 | `net.inet.udp.sendspace`    | 65536    | 9216    | Max outgoing UDP datagram space    |
 | `net.inet.udp.maxdgram`     | 65536 | 9216    | Max outgoing UDP datagram size       |
 | `net.local.dgram.maxdgram`  | 2048  | 2048    | Max outgoing local UDP datagram size |
-| `net.inet.tcp.recvbuf_inc`  | 65536 | 16384   |                                      |
-| `net.inet.tcp.sendbuf_inc`	| 32768 | 8192    | Send buffer increment step size      |
+| `net.inet.tcp.recvbuf_inc`  | 65536 | 16384   | Receive buffer increment step size. This parameter sets the increment size by which the kernel will grow the TCP socket receive buffer (when “auto-tuning” is enabled) for a given connection. In other words: if receive buffer auto-growth is turned on (via `net.inet.tcp.recvbuf_auto = 1`), the system starts with a smaller buffer size and, if needed (based on congestion, RTT, throughput, etc), the buffer will step up in increments of `recvbuf_inc` until the cap of `net.inet.tcp.recvbuf_max` is reached |
+| `net.inet.tcp.sendbuf_inc`	| 32768 | 8192    | Send buffer increment step size. Similar in concept to the receive side: this parameter sets the increment size by which the kernel will grow the TCP socket send buffer (when auto‐tuning is enabled via `net.inet.tcp.sendbuf_auto = 1`). It determines how aggressively the send buffer can expand for a given connection, up to the cap `net.inet.tcp.sendbuf_max` |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
 | `net.link.ifqmaxlen`        | 1024  | 512      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |

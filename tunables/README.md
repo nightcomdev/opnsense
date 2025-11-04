@@ -113,7 +113,7 @@ Other Network data:
 | Tunable                   | Value | Default | Description                                 |
 | ------------------------- |:-----:|:-------:|:-------------------------------------------:|
 | `kern.sched.preempt_thresh` | 240   | 0       | Max priority for preemption                 |
-| `kern.randompid`	          | 1     | 0       | Randomize process IDs                       |
+| `kern.randompid`	          | 1     | 0       | Randomize process IDs. This sysctl controls whether process IDs (PIDs) are assigned sequentially (the usual behaviour) or with some randomness. With randomisation enabled, the kernel will choose the “next” PID by adding a random offset rather than simply incrementing by 1 |
 | `hw.syscons.kbd_reboot`	    | 0     | 1       | Disable CTRL+ALT+DEL reboot                 |
 | `kern.random.fortuna.minpoolsize`	| 128 | 64 | Min entropy pool size for reseed             |
 | `kern.random.harvest.mask`	| 33119 | 511    | Entropy harvesting mask                      |
@@ -123,7 +123,7 @@ Other Network data:
 
 | Tunable                     | Value  | Default  | Description                    |
 | --------------------------- |:------:|:--------:|:------------------------------:|
-| `net.isr.dispatch`            | hybrid | deferred | NetISR dispatch policy         |
+| `net.isr.dispatch`            | hybrid | deferred | NetISR dispatch policy. `direct`: Packets are processed immediately in the interrupt context (or as soon as feasible) without being queued or deferred. This has the lowest latency but limits concurrency (often single thread) and may saturate one core under high load. `net.isr.direct_force` is also worth checking if you pick `direct`. `deferred`: Packets are queued for later processing by worker threads (NETISR threads). This increases concurrency (can use multiple cores) at the possible cost of additional latency due to queueing. Good for high throughput / many cores / multi-queue NICs. `hybrid`: A mix of direct and deferred: some immediate processing plus queueing for other parts. Intended to strike a balance between latency and concurrency. Some implementations allow “direct” for certain packets and “deferred” for others.        |
 | `net.isr.bindthreads`         | 1      | 0        | Bind netisr threads to CPUs    |
 | `net.isr.maxthreads`          | 4      | 1        | Max CPUs for netisr processing |
 | `net.inet.rss.enabled`        | 1      | 0        | Enable Receive Side Scaling    |

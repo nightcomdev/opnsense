@@ -1,7 +1,7 @@
 # Firewall QoS shaper
 All settings are the same for Upload/Download. You can also play with `Quantum` for example `1514`. This is simplest way with 1Gbps fiber to provide QoS. More complex solution on the way...
 
-I uploaded my current settings of QoS, it's working like that over 2 weeks and no issues at all even during heavy load of network. `Buckets=2048`, default `FQ-CoDel Flows=1024`, so if you set `FQ-CoDel Flows=2048` then set also `Buckets=4096`.
+I uploaded my current settings of QoS, it's working like that over 2 weeks and no issues at all even during heavy load of network. `Buckets=2048`, default value for OPNsense is `FQ-CoDel Flows=1024`. If you want to increase `FQ-CoDel Flows=2048` then also increase `Buckets=4096` so it's always double and avoid conflicts.
 
 ## Agressive values
 ![alt text](https://github.com/nightcomdev/opnsense/blob/main/QoS/images/pipe.PNG "Pipe Download")

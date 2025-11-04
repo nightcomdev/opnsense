@@ -67,6 +67,7 @@ Other Network data:
 | `kern.ipc.soacceptqueue`    | 1024  | 128   | Defines the maximum number of pending TCP connections that can wait in a listen backlog before being accepted by a user process (like Unbound, Web UI, or a local daemon) |
 | `net.inet.tcp.acc_ecn`      | 1     | 0      | Controls whether your TCP stack accepts Incoming Explicit Congestion Notification (ECN) enabled connections. If you using some older services, you see packet drops or connection timeouts set back to `0` and `net.inet.tcp.send_ecn` also |
 | `net.inet.tcp.send_ecn`     | 1     | 0      |                |
+| `net.inet.tcp.ecn.maxretries` | 1   | 2    | If you enable ECN (`send_ecn=1`, `acc_ecn=1`), and a remote host or middlebox on the path drops ECN-flagged SYN packets, the system can automatically retry without ECN after a few failed attempts. `0`=Disable ECN fallback. `1`=Retry once with ECN, then fall back to non-ECN if handshake fails. `2`=(default on some builds) → Retry twice, then fall back.    |
 
 ## TCP Optimization & Algorithms
 

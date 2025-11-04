@@ -10,6 +10,7 @@ Content will be added....
 
 ![alt text](https://github.com/nightcomdev/opnsense/blob/main/QoS/images/rules.PNG "Rules Download")
 
+![alt text](https://github.com/nightcomdev/opnsense/blob/main/QoS/images/rules-upload.PNG "Rules Download")
 ## Conservative values
 
 

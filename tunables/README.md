@@ -6,6 +6,9 @@ Read carefully and adjust to your needs. If you have stronger hardware you can r
 > [!CAUTION]
 > **Before any changes make BACKUP of your current config!**
 
+> [!NOTE]
+> All data in secion `Value` can change! All settings have been adjusted on date 17.11.2025
+
 # OPNsense System Tunables Configuration
 This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:
 - CPU N5105
@@ -22,6 +25,8 @@ Other Network data:
 - 5 Virtual Machines
 - NAS
 - 7 smart devices
+- Access Point EAP650 5GHz
+- Access Point RT-AC86U 2.4GHz
 
 # Tunables settings
 ## Network Security & Hardening

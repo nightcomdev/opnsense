@@ -62,7 +62,7 @@ Other Network data:
 | `net.inet.tcp.recvbuf_inc`  | 65536 | 16384   | Receive buffer increment step size. This parameter sets the increment size by which the kernel will grow the TCP socket receive buffer (when “auto-tuning” is enabled) for a given connection. In other words: if receive buffer auto-growth is turned on (via `net.inet.tcp.recvbuf_auto = 1`), the system starts with a smaller buffer size and, if needed (based on congestion, RTT, throughput, etc), the buffer will step up in increments of `recvbuf_inc` until the cap of `net.inet.tcp.recvbuf_max` is reached |
 | `net.inet.tcp.sendbuf_inc`	| 32768 | 8192    | Send buffer increment step size. Similar in concept to the receive side: this parameter sets the increment size by which the kernel will grow the TCP socket send buffer (when auto‐tuning is enabled via `net.inet.tcp.sendbuf_auto = 1`). It determines how aggressively the send buffer can expand for a given connection, up to the cap `net.inet.tcp.sendbuf_max` |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
-| `net.link.ifqmaxlen`        | 1024 (Testing: 768) | 50      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
+| `net.link.ifqmaxlen`        | 768 | 50      | Max send queue size. Default maximum length (in packets) of each interface transmit queue. When a process, kernel subsystem, or firewall rule wants to send a packet, it first places it into the interface’s output queue. Set `512` if you look for very low latency. |
 | `kern.ipc.maxsockets`	      | 65536 | 65536 | Maximum number of sockets              |
 | `kern.ipc.soacceptqueue`    | 512  | 128   | Defines the maximum number of pending TCP connections that can wait in a listen backlog before being accepted by a user process (like Unbound, Web UI, or a local daemon) |
 | `kern.ipc.somaxconn`        | 512  | 128   |                         |
@@ -132,7 +132,7 @@ Other Network data:
 | `net.inet.rss.enabled`        | 1      | 0        | Enable Receive Side Scaling. RSS allows network packet processing to be distributed across multiple CPU cores (via multiple receive queues) instead of concentrating all interrupt/packet‐processing traffic on a single core. When RSS is enabled, inbound network traffic can be balanced across cores, which can improve throughput and reduce bottlenecks on multi-core systems with multi-queue NICs. |
 | `net.inet.rss.bits`           | 2      | 0        | RSS bits configuration         |
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |
-| `net.isr.defaultqlimit`       | 1024 (Testing:768) | 256      | Default netisr queue limit. Defines the maximum number of packets that each software interrupt (netisr) queue can hold before new packets are dropped. Set `512` if you look for very low latency |
+| `net.isr.defaultqlimit`       | 768    | 256      | Default netisr queue limit. Defines the maximum number of packets that each software interrupt (netisr) queue can hold before new packets are dropped. Set `512` if you look for very low latency |
 | `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use `direct` instead `hybrid`. `0`=disabled and `1`=enabled |
 | `net.route.netisr_maxqlen`	  | 512    | 256     | Max routing socket queue length. Defines the maximum number of packets or routing events that can be queued in the routing netisr queue. Think of it as the work queue for the routing thread inside the network ISR (interrupt service routine) framework. Set it to `256` is you search for low latency. |
 
@@ -179,7 +179,7 @@ Other Network data:
 
 | Tunable                     | Value  | Default  | Description                    |
 | --------------------------- |:------:|:--------:|:------------------------------:|
-| `net.inet.ip.intr_queue_maxlen`	| 1024 (Testing: 768) | 50       | Max IP input queue size. When a packet is handed off from the NIC driver (e.g., `igc`) to the IP input queue, it’s placed into a software queue called the IP interrupt queue (`ipintrq`) `net.inet.ip.intr_queue_maxlen` sets the maximum number of packets that this queue can hold before the kernel starts dropping new ones. |
+| `net.inet.ip.intr_queue_maxlen`	| 768 | 50       | Max IP input queue size. When a packet is handed off from the NIC driver (e.g., `igc`) to the IP input queue, it’s placed into a software queue called the IP interrupt queue (`ipintrq`) `net.inet.ip.intr_queue_maxlen` sets the maximum number of packets that this queue can hold before the kernel starts dropping new ones. |
 | `net.inet6.ip6.intr_queue_maxlen`	| 1024 | 1000     | Max IPv6 input queue size      |
 | `net.igc.num_queues`	         | 4      | 1       | Number of IGC queues. Value depends how many physical cores are in your CPU - number of cores used for RX/TX processing |
 | `net.igc.tx_ring_size`	       | 1024   | 512     | TX ring size                   |

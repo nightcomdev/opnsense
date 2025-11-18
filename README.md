@@ -1,6 +1,8 @@
 # Tuning OPNsense tunables, Unbound, QoS, Intel i226-V 
 Repository contains tips & tricks, optimization and tuning of Unbound, QoS, Intel i226-V and OPNsense it self. Be aware that it's optimized for hardware listed in section **Hardware**, adjust config to your needs.
 
+Data provided in Tunables field `Value` can change, be aware of that. This config is already working very good but I still test different options mostly with queues, I/O and buffers. Crucial changes will be announced.
+
 Mirror of this repository also exist on GitLab
 https://gitlab.com/nightcomdev/opnsense-tuning
 

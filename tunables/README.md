@@ -59,9 +59,10 @@ Other Network data:
 | `net.inet.tcp.sendspace`    | 131072    | 32768   | Initial send socket buffer size. This tunable defines the default TCP send buffer size (in bytes) for new TCP sockets. It is the starting value for how much data TCP is allowed to have “in flight” before requiring ACKs. Other tunables related with this `net.inet.tcp.sendbuf_auto=1`, `net.inet.tcp.sendbuf_inc` should not be to small, `net.inet.tcp.sendbuf_max` Must be >= your new sendspace, `kern.ipc.maxsockbuf` Must be >= sendbuf_max |
 | `net.inet.tcp.recvspace`    | 131072    | 65536   | Initial receive socket buffer size. Controls the default TCP receive buffer size (in bytes) for new TCP connections. This is how much incoming data TCP can hold before acknowledging and slowing the sender. If changed then you need to `recvbuf_auto`=1, `recvbuf_inc` not to small (common values: 16k–64k), `recvbuf_max` >= your new recvspace, `maxsockbuf` >= recvbuf_max |
 | `net.inet.udp.recvspace`    | 131072    | 42080   | Max incoming UDP datagram space    |
-| `net.inet.udp.sendspace`    | 65536    | 9216    | Max outgoing UDP datagram space    |
+| `net.inet.udp.sendspace`    | 131072 | 9216    | Max outgoing UDP datagram space    |
 | `net.inet.udp.maxdgram`     | 65536 | 9216    | Max outgoing UDP datagram size       |
-| `net.local.dgram.maxdgram`  | 2048  | 2048    | Max outgoing local UDP datagram size |
+| `net.local.dgram.maxdgram`  | 8192  | 2048    | Max outgoing local UDP datagram size |
+| `net.local.dgram.recvspace` | 65536 |         |                                      |
 | `net.inet.tcp.recvbuf_inc`  | 65536 | 16384   | Receive buffer increment step size. This parameter sets the increment size by which the kernel will grow the TCP socket receive buffer (when “auto-tuning” is enabled) for a given connection. In other words: if receive buffer auto-growth is turned on (via `net.inet.tcp.recvbuf_auto = 1`), the system starts with a smaller buffer size and, if needed (based on congestion, RTT, throughput, etc), the buffer will step up in increments of `recvbuf_inc` until the cap of `net.inet.tcp.recvbuf_max` is reached |
 | `net.inet.tcp.sendbuf_inc`	| 32768 | 8192    | Send buffer increment step size. Similar in concept to the receive side: this parameter sets the increment size by which the kernel will grow the TCP socket send buffer (when auto‐tuning is enabled via `net.inet.tcp.sendbuf_auto = 1`). It determines how aggressively the send buffer can expand for a given connection, up to the cap `net.inet.tcp.sendbuf_max` |
 | `net.inet.tcp.minmss`       | 536   | 216     | Minimum TCP Maximum Segment Size     |
@@ -137,7 +138,7 @@ Other Network data:
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |
 | `net.isr.defaultqlimit`       | 768    | 256      | Default netisr queue limit. Defines the maximum number of packets that each software interrupt (netisr) queue can hold before new packets are dropped. Set `512` if you look for very low latency |
 | `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use `direct` instead `hybrid`. `0`=disabled and `1`=enabled |
-| `net.route.netisr_maxqlen`	  | 512    | 256     | Max routing socket queue length. Defines the maximum number of packets or routing events that can be queued in the routing netisr queue. Think of it as the work queue for the routing thread inside the network ISR (interrupt service routine) framework. Set it to `256` is you search for low latency. |
+| `net.route.netisr_maxqlen`	  | 768    | 256     | Max routing socket queue length. Defines the maximum number of packets or routing events that can be queued in the routing netisr queue. Think of it as the work queue for the routing thread inside the network ISR (interrupt service routine) framework. Set it to `256` is you search for low latency. |
 
 
 ## IPv6 Privacy & Configuration

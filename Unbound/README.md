@@ -2,7 +2,7 @@
 
 Content will be added soon...be patient 
 
-Create file `/usr/local/etc/unbound.opnsense.d/99-custom.conf`  
+Create file `/usr/local/etc/unbound.opnsense.d/99-custom.conf`  s
 
 `server:
     ###############################################
@@ -42,6 +42,5 @@ Create file `/usr/local/etc/unbound.opnsense.d/99-custom.conf`
     # DNS STABILITY
     ###############################################
     infra-cache-numhosts: 20000
-    infra-host-ttl: 900`
-
-    
+    infra-host-ttl: 900
+    `

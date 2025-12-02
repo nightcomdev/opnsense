@@ -111,8 +111,8 @@ Other Network data:
 | `hw.igc.rx_process_limit`   | 1024    | 100     | The maximum number of packets the driver will process per interrupt RX. If you see latency spikes change to 1024 |
 | `hw.igc.tx_process_limit`   | 1024    | 100     | The maximum number of packets the driver will process per interrupt TX. If you see latency spikes change to 1024 |
 | `hw.pci.enable_aspm`        | 0     | 0       | ASPM (Active State Power Management) lets PCIe links enter low-power states (L0s or L1) when idle. This saves a few hundred milliwatts but adds small wake-up delays (microseconds) when traffic resumes. `0`=disabled `1`=enabled |
-| `hw.igc.rx_abs_int_delay`   |  0    |         |                                            |
-| `hw.igc.tx_abs_int_delay`   | 0     |         |                                            |
+| `hw.igc.rx_abs_int_delay`   |  0    | 64 |  It determines how long the NIC will buffer incoming packets before generating an interrupt to the CPU. Value is in microseconds |
+| `hw.igc.tx_abs_int_delay`   |  0    | 64 |  It determines how long the NIC will buffer outgoing packets before generating an interrupt to signal transmission completion. Value is in microseconds |
 
 
 ## System & Process Management

@@ -134,7 +134,7 @@ Other Network data:
 | `net.isr.bindthreads`         | 1      | 0        | Bind netisr threads to CPUs    |
 | `net.isr.maxthreads`          | 4      | 1        | Max CPUs for netisr processing |
 | `net.inet.rss.enabled`        | 1      | 0        | Enable Receive Side Scaling. RSS allows network packet processing to be distributed across multiple CPU cores (via multiple receive queues) instead of concentrating all interrupt/packet‐processing traffic on a single core. When RSS is enabled, inbound network traffic can be balanced across cores, which can improve throughput and reduce bottlenecks on multi-core systems with multi-queue NICs. |
-| `net.inet.rss.bits`           | 2      | 0        | RSS bits configuration         |
+| `net.inet.rss.bits`           | 2      | 0        | It determines how many bits are used in the RSS hash calculation to distribute network packets across multiple CPU queues/cores. `0`=Single-core systems (1 queue), `1`=Dual-core (2 queue), `2`=Quad-core (4 queue), `3`=Most OPNsense (default - 8 queue), `4`=8-16 core systems (16 queue), `5`=High-end servers (32 queue), `6`=Enterprise hardware (64 queue), `7`=Rare, specialized (128 queue), `8`=Extreme hardware (256 queue) |
 | `net.inet.ip.fastforwarding`	| 1      | 0        | Enable IP fast forwarding      |
 | `net.isr.defaultqlimit`       | 768    | 256      | Default netisr queue limit. Defines the maximum number of packets that each software interrupt (netisr) queue can hold before new packets are dropped. Set `512` if you look for very low latency |
 | `net.isr.direct_force`	      | 0      | 0        | Force direct netisr dispatch. This one you can remove unless you will use `direct` instead `hybrid`. `0`=disabled and `1`=enabled |

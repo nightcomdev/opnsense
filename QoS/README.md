@@ -7,6 +7,7 @@ I uploaded my current settings of QoS, it's working like that over 2 weeks and n
 >Please remove in section "Queue"
 >Target = 5
 >Interval = 100
+>
 >It's totally enough if values are only in "Pipe"
 
 ## Agressive values

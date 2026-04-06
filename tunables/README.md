@@ -198,7 +198,7 @@ Other Network data:
 | `dev.hwpstate_intel.1.epp`    | 50     | 80       | Efficiency/Performance Preference 0=max performance / 100=most power saving |
 | `dev.hwpstate_intel.2.epp`    | 50     | 80       | Efficiency/Performance Preference 0=max performance / 100=most power saving |
 | `dev.hwpstate_intel.3.epp`    | 50     | 80       | Efficiency/Performance Preference 0=max performance / 100=most power saving |
-| `hw.intr_storm_threshold`	    | 5000   | 1000     | Interrupt storm protection threshold |
+| `hw.intr_storm_threshold`	    | 20000   | 1000    | Interrupt storm protection threshold. If `hw.igc.max_interrupt_rate` is set to 15000 then this value should be higher, it prevents to system errors. |
 
 
 ## PF Firewall

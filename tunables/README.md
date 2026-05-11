@@ -6,6 +6,10 @@ Read carefully and adjust to your needs. If you have stronger hardware you can r
 > [!CAUTION]
 > **Before any changes make BACKUP of your current config!**
 
+# Support
+If you like my work and you want to support it, consider buying me a coffee. Thank you!
+
+<a href="https://www.buymeacoffee.com/nightcom" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 # OPNsense System Tunables Configuration
 This configuration is tuned for router Hunsn RJ03 with OPNsense. Hardware list:

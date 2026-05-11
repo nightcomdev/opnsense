@@ -56,6 +56,3 @@ Here you can find links to sources from where I took all informations. Beside li
 - https://blog.miniserver.it/en/pfsense/tuning-and-troubleshooting-network-cards/
 - https://man.freebsd.org/cgi/man.cgi?tuning
 - https://forums.freebsd.org/threads/tuning-7-freebsd-performance-tuning-manual.82944/
-
-
-[![Buy Me A Coffee](https://buymeacoffee.com)](https://buymeacoffee.com)

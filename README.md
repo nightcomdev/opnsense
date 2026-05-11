@@ -9,7 +9,7 @@ https://gitlab.com/nightcomdev/opnsense-tuning
 > [!CAUTION]
 > Before you make any changes in your config, make BACKUP of you current config! **All changes in your config are done on your own risk!**
 
-### # Support
+### Support
 If you like my work and you want to support it, consider buying me a coffee. Thank you!
 
 <a href="https://www.buymeacoffee.com/nightcom" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
@@ -61,8 +61,5 @@ Here you can find links to sources from where I took all informations. Beside li
 - https://blog.miniserver.it/en/pfsense/tuning-and-troubleshooting-network-cards/
 - https://man.freebsd.org/cgi/man.cgi?tuning
 - https://forums.freebsd.org/threads/tuning-7-freebsd-performance-tuning-manual.82944/
-
-# Support
-If you like my work and you want to support it, consider buying me a coffee. Thank you!
 
 <a href="https://www.buymeacoffee.com/nightcom" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>

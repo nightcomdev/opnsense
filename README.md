@@ -58,6 +58,4 @@ Here you can find links to sources from where I took all informations. Beside li
 - https://forums.freebsd.org/threads/tuning-7-freebsd-performance-tuning-manual.82944/
 
 
-<a href="https://buymeacoffee.com">
-  <img src="https://buymeacoffee.com me a coffee&emoji=&slug=nightcom&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" />
-</a>
+[![Buy Me A Coffee](https://buymeacoffee.com)](https://buymeacoffee.com)
